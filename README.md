@@ -41,4 +41,4 @@
 ---
 ## Key Takeaway
 
-Each vulnerability in this CTF was a stepping stone to the next. Credentials led to API keys, which led to protected endpoints, which revealed IDOR vulnerabilities. This demonstrates the importance of defense-in-depth: securing multiple layers means that even if one is compromised, the attack chain stops.
+Each vulnerability in this CTF was a stepping stone to the next. It all started with forgotten subdomains. Credentials led to API keys, which led to protected endpoints, which revealed IDOR vulnerabilities. This demonstrates the importance of defense-in-depth: securing multiple layers means that even if one is compromised, the attack chain stops.

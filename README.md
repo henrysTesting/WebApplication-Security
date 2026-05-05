@@ -4,12 +4,17 @@
 - **Type:** Web Application Exploitation - OSINT, Authentication, API Security, IDOR
 - **Total Flags:** 8 discovered
 
+# Overview
+Conducted a multi-stage web application security assessment on several target instances, identifying and chaining vulnerabilities including exposed subdomains, weak authentication controls, sensitive configuration leakage, and insecure API design. Leveraged OSINT and automated discovery tools to map the attack surface, then exploited misconfigurations such as lack of rate limiting, exposed environment files, and insecure direct object references (IDOR) to progressively escalate access. Demonstrated how individual weaknesses can compound into full system compromise, highlighting the critical importance of defense-in-depth, proper access controls, and secure handling of sensitive data.
+
+In this lab I discovered the cascading effects of 
+
 ---
 ## Tools Used
 
 **Subfinder** - Fast passive subdomain discovery using CT logs and search engines. Quickly reveals hidden subdomains without generating suspicious traffic.
 
-**ffuf** - Web fuzzer for discovering hidden directories and files. The `-mc` flag filters for relevant status codes (200, 301, 302, 403).
+**ffuf** - Web fuzzer for discovering hidden directories and files. 
 
 **Burp Suite** - Intercept and analyze HTTP requests. Used for request inspection, Intruder (brute forcing credentials), and Repeater (manual API testing with authentication headers).
 
